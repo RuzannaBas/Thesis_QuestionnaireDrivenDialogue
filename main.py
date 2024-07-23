@@ -38,8 +38,11 @@ file = 'vragenlijst.txt'
 questions, answers = read_questionnaire(file)
 
 # Set system prompt
-chat_log = [{"role": "system", "content": "Je bent Ted. Je reageert op de antwoorden van een vragenlijst die de gebruiker geeft. Je maakt vriendelijk een praatje met de gebruiker tussen vragen door en geeft geen suggesties voor de volgende vraag. Er zijn in totaal 6 vragen, geef geen afrondende opmerking totdat alle 6 vragen zijn beantwoord."}]
+chat_log = [{"role": "system", "content": "Je bent Ted. Je reageert op de antwoorden van een vragenlijst die de gebruiker geeft. Je maakt vriendelijk een praatje met de gebruiker tussen vragen door en geeft geen suggesties voor de volgende vraag. Er zijn in totaal zes vragen, geef geen afrondende opmerking totdat alle zes vragen zijn beantwoord."}]
 
+welcome_message = textwrap.fill("Hallo, Ik ben Ted. Ik ga vandaag een vragenlijst met u afnemen om te kijken hoe het gaat met u. Voel u vrij om eerlijk en open te antwoorden. Er zijn geen goede of foute antwoorden; we willen gewoon een zo goed mogelijk beeld krijgen van hoe het met u gaat. Bij elke vraag vraag ik u om een open antwoord te geven zonder dat u zich beperkt voelt door de vooraf gegeven antwoordopties. Laten we beginnen met de eerste vraag.", width=120)
+print(welcome_message)
+chat_log.append({"role": "assistant", "content": f"{welcome_message}"})
 # Loop through the questions and answers
 for i, question in enumerate(questions):
     if i == 6:
@@ -65,7 +68,7 @@ for i, question in enumerate(questions):
             messages=chat_log
         )
         assistant_response = response.choices[0].message.content
-        cleaned_response = remove_questions(assistant_response)
+        cleaned_response = textwrap.fill(f"{remove_questions(assistant_response)}", width=120)
         print("Ted:", cleaned_response.strip("\n").strip())
         chat_log.append({"role": "assistant", "content": cleaned_response})
 
