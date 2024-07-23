@@ -1,0 +1,36 @@
+Eerst wil ik u wat vragen over mobiliteit. Zou u zeggen dat:
+u geen problemen heeft met lopen?
+u een beetje problemen heeft met lopen?
+u matige problemen heeft met lopen?
+u ernstige problemen heeft met lopen?
+u niet in staat bent om te lopen?
+
+De volgende vraag gaat over zelfzorg. Zou u zeggen dat:
+u geen problemen heeft met uzelf wassen of aankleden?
+u een beetje problemen heeft met uzelf wassen of aankleden?
+u matige problemen heeft met uzelf wassen of aankleden?
+u ernstige problemen heeft met uzelf wassen of aankleden?
+u niet in staat bent om uzelf te wassen of aan te kleden?
+
+De volgende vraag gaat over dagelijkse activiteiten (bijv. werk, studie, huishouden, gezins- of vrijetijdsactiviteiten). Zou u zeggen dat:
+u geen problemen heeft met het uitvoeren van uw dagelijkse activiteiten?
+u een beetje problemen heeft met het uitvoeren van uw dagelijkse activiteiten?
+u matige problemen heeft met het uitvoeren van uw dagelijkse activiteiten?
+u ernstige problemen heeft met het uitvoeren van uw dagelijkse activiteiten?
+u niet in staat bent om uw dagelijkse activiteiten uit te voeren
+
+De volgende vraag gaat over pijn of ongemak. Zou u zeggen dat:
+u geen pijn of ongemak heeft?
+u een beetje pijn of ongemak heeft?
+u matige pijn of ongemak heeft?
+u ernstige pijn of ongemak heeft?
+u extreme pijn of ongemak heeft?
+
+De laatste vraag gaat over angst of somberheid. Zou u zeggen dat:
+u niet angstig of somber bent?
+u een beetje angstig of somber bent?
+u matig angstig of somber bent?
+u erg angstig of somber bent?
+u extreem angstig of somber bent?
+
+Nu wil ik aan u vragen of u kunt aangeven hoe goed of slecht u gezondheid vandaag is. Neem in gedachten een verticale lijn die van 0 tot 100 loopt. Bovenaan de lijn staat 100, voor de beste gezondheid die u zich kunt voorstellen. Onderaan de lijn staat 0, voor de slechtste gezondheid die u zich kunt voorstellen. Zeg me nu op welk punt van deze lijn u uw gezondheid vandaag zou zetten.
