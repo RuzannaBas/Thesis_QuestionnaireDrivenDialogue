@@ -19,7 +19,7 @@ def main():
     # Read the questions and answers
     questions, answers = read_questionnaire(file)
 
-    results = [date.today]
+    results = []
     # Set system prompt
     chat_log = [{"role": "system", "content": "Je bent Ted, een vriendelijke chatbot die reageert op de antwoorden van een vragenlijst die de gebruiker geeft. Je maakt vriendelijk een praatje met de gebruiker tussen vragen door."}]
 
@@ -30,8 +30,6 @@ def main():
     # Loop through the questions and answers
     for i, question in enumerate(questions):
         choices = []
-        if i == 6:
-            break
         wrapped_question = textwrap.fill(f"Vraag {i+1}: {question}", width=120)
         print(wrapped_question)
         for j, answer in enumerate(answers[i]):
@@ -65,8 +63,9 @@ def main():
                 )
                 final_response = response.choices[0].message.content
                 print(final_response)
+                break
 
-    save_result(results)
+    save_result(results, chat_log)
 
 if __name__ == "__main__":
     main()
