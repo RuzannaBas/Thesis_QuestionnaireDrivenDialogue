@@ -24,7 +24,7 @@ def generate_small_talk(previous_answer, chat_log):
         print()
         chat_log.append({"role": "assistant", "content": cleaned_response})
 
-        if "volgende vraag" in cleaned_response or "vragenlijst" in cleaned_response or "?" not in cleaned_response:
+        if ("volgende vraag" in cleaned_response or "vragenlijst" in cleaned_response)  and "?" not in cleaned_response:
             return
         # User input
         user_message = input()
