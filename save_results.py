@@ -6,7 +6,6 @@ def save_result(results, chatlog):
     total = 0
     for result in results:
         total += result
-        print(total)
     results.append(total)
     
     results.insert(0,date.today())
